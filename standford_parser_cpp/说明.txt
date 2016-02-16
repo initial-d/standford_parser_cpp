@@ -1,0 +1,4 @@
+tag类封装了stanford-parser的词性标注以及依存标注
+返回值为string，string格式如下：
+前面为chunk以及词性，后面为依存关系的list，以\t分隔
+(ROOT (S (ADVP (RB however)) (, ,) (NP (NNS https)) (VP (VBZ signals) (NP (DT the) (NN browser) (S (VP (TO to) (VP (VB use) (NP (NP (DT an) (VBN added) (NN encryption) (NN layer)) (PP (IN of) (NP (NNS ssl\/tls))) (S (VP (TO to) (VP (VB protect) (NP (DT the) (NN traffic))))))))))) (. .)))	[advmod(signals-4, however-1), nsubj(signals-4, https-3), root(ROOT-0, signals-4), det(browser-6, the-5), dobj(signals-4, browser-6), aux(use-8, to-7), infmod(browser-6, use-8), det(layer-12, an-9), amod(layer-12, added-10), nn(layer-12, encryption-11), dobj(use-8, layer-12), prep_of(layer-12, ssl\/tls-14), aux(protect-16, to-15), infmod(layer-12, protect-16), det(traffic-18, the-17), dobj(protect-16, traffic-18)]
